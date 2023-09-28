@@ -1,34 +1,91 @@
 import React from 'react';
 import './navbar.scss';
+import { NavLink } from 'react-router-dom';
 
 import logo from '../../assets/img/logo.svg';
-import prev from '../../assets/icon/icon-prev.svg'
+import prev from '../../assets/icon/icon-prev.svg';
 
 const Navbar = () => {
-
+  const activeLink = 'nav-list__link nav-list__link--active';
+  const normalLink = 'nav-list__link';
 
   return (
-    <div className="header">
+    <div className="navbar">
       <div className="container">
-        <div className="header__navbar">
-          <a className="header__logo" href="/">
+        <div className="navbar__wrapper">
+          <a className="navbar__logo" href="/">
             <img src={logo} alt="Logo" />
           </a>
 
-          <nav className="header__nav">
+          <nav className="navbar__nav">
             <ul className="nav-list">
-              <li className="nav-list__item"><a href="!#" active>Home</a></li>
-              <li className="nav-list__item"><a href="!#">Service</a></li>
-              <li className="nav-list__item"><a href="!#">Company</a></li>
-              <li className="nav-list__item"><a href="!#">Career</a></li>
-              <li className="nav-list__item"><a href="!#">Blog</a></li>
-              <li className="nav-list__item"><a href="!#">Contact us</a></li>
-            </ul>
-          <div className="header__clone">
-            <a href="!#">Clone projects <img src={prev} alt="Icon prev" /></a>
-          </div>
+              <li className="nav-list__item">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                  to="/"
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-list__item">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                  to="/service"
+                >
+                  Service
+                </NavLink>
+              </li>
+              <li className="nav-list__item">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                  to="/company"
+                >
+                  Company
+                </NavLink>
+              </li>
+              <li className="nav-list__item">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                  to="/career"
+                >
+                  Career
+                </NavLink>
+              </li>
+              <li className="nav-list__item">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                  to="/blog"
+                >
+                  Blog
+                </NavLink>
+              </li>
+              <li className="nav-list__item">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                  to="/contact"
+                >
+                 Contact us
+                </NavLink>
+              </li>
+            </ul> 
+            <div className="navbar__clone">
+              <a href="#!">
+                Clone projects <img src={prev} alt="Icon prev" />
+              </a>
+            </div>
           </nav>
-
         </div>
       </div>
     </div>

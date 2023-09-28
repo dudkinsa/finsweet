@@ -4,12 +4,14 @@
     --black-velvet: #232536;
     --white: #ffffff;
     --secondary-orange: #FFD3AF;
+    --echinoidea: #FFA155;
     
 
     /* Navbar */
     --background-navbar: var(--black-velvet);
     --text-navbar: var(--white);
     --clone-text:var(--secondary-orange);
+    --active: var(--echinoidea);
 }
 
 body {
