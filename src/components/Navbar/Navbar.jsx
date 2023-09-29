@@ -76,10 +76,10 @@ const Navbar = () => {
                   }
                   to="/contact"
                 >
-                 Contact us
+                  Contact us
                 </NavLink>
               </li>
-            </ul> 
+            </ul>
             <div className="navbar__clone">
               <a href="#!">
                 Clone projects <img src={prev} alt="Icon prev" />
