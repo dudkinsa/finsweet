@@ -43,7 +43,7 @@
     background: #444cfc;
     transition: background-color 0.2s ease-in, color 0.2s ease-in;
   }
-  &__button-decor {
+  &__button--decor {
     position: absolute;
     top: 0;
     left: 0;
@@ -61,6 +61,7 @@
 .image {
     display: flex;
    margin-top: 96px;
+
 
     &__left {
         position: relative;
@@ -80,5 +81,10 @@
     
     }
 }
-.image-centr {
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 33px;
+   margin-top: 33px;    
 }
