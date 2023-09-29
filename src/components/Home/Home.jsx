@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.scss';
-import image from '../../assets/img/Home/Header/image.jpg';
-import decor from '../../assets/img/Home/Header/Shapes.png';
+import image from '../../assets/img/Home/Header/image.png';
+import decor from '../../assets/img/Home/Header/Shapes.svg';
 import prev from '../../assets/icon/icon-prev.svg'
 import decorBtn from '../../assets/img/Shapes-btn.svg'
 
@@ -42,7 +42,7 @@ const Home = () => {
             <div className="image">
               <img className="image__left" src={decor} alt="Decor left" />
               <img className='image-centr' src={image} alt="Image" />
-              <img className="image__right" src={decor} alt="Decor right" />
+              <div className="image__right"></div>
             </div>
           </div>
 

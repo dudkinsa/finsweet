@@ -1,11 +1,11 @@
 .header {
   background-color: var(--background-header);
   color: var(--text-header);
-  &__wrapper {
-  }
+
 
   &__inner {
     display: flex;
+    justify-content: space-between
   }
 }
 
@@ -28,6 +28,7 @@
   &__info {
     width: 528px;
     margin-bottom: 32px;
+    opacity: 0.6;
   }
 
   &__button {
@@ -57,3 +58,27 @@
   }
 }
 
+.image {
+    display: flex;
+   margin-top: 96px;
+
+    &__left {
+        position: relative;
+        top: 530px;
+       
+        width: 16px;
+        height: 102px;
+     
+    }
+
+    &__right {
+        background-image: url(../../assets/img/Home/Header/Shapes.svg);
+       background-size: cover;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 322px;
+    
+    }
+}
+.image-centr {
+}
