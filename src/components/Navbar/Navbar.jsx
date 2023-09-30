@@ -13,9 +13,10 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <div className="navbar__wrapper">
-          <a className="navbar__logo" href="/">
+          <NavLink className="navbar__logo" to="/">
             <img src={logo} alt="Logo" />
-          </a>
+          </NavLink>
+          
 
           <nav className="navbar__nav">
             <ul className="nav-list">
