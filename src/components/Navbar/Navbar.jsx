@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import logo from '../../assets/img/logo.svg';
 import prev from '../../assets/icon/icon-prev.svg';
+import MobileButton from '../MobileButton/MobileButton';
 
 const Navbar = () => {
   const activeLink = 'nav-list__link nav-list__link--active';
@@ -12,10 +13,12 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
+        <MobileButton />
         <div className="navbar__wrapper">
           <NavLink className="navbar__logo" to="/">
             <img src={logo} alt="Logo" />
           </NavLink>
+          {/* <MobileButton /> */}
           
 
           <nav className="navbar__nav">
