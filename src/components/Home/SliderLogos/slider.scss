@@ -1,0 +1,36 @@
+.slider{
+    display: none;
+    padding-bottom: 50px;
+}
+.swiper {
+    width: 80%;
+    height: 80%;
+
+    
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  :root {
+    --swiper-theme-color: #fff;
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-bullet-inactive-color: #fff;
+    
+  }
+
+
+@media (max-width: 1100px) {
+    .slider{
+        display: block;
+    }
+  
+}

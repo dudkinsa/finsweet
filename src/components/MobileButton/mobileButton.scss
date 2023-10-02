@@ -71,3 +71,29 @@
       }
     }
 }
+
+@media (max-width: 420px) {
+  .mobile-button{
+    &__icon {
+      width: 30px;
+      height: 2px;
+  }
+  &__icon::after,
+  &__icon::before {
+    width: 30px;
+    height: 2px;
+  }
+  &__icon::before {
+    top: -8px;
+  }
+
+  &__icon::after {
+    top: 8px;
+  }
+
+  .mobile-button__btn { 
+    margin-right: 10px;
+}
+
+  }
+}
