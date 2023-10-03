@@ -24,7 +24,7 @@ const Slider = ({ logos }) => {
       >
         {logos.map((logo) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={logo.id}>
               <img src={logo.image} alt={logo.title} />
             </SwiperSlide>
           );
