@@ -37,7 +37,7 @@ font-family: Poppins, sans-serif;
 font-size: 16px;
 font-weight: 400;
 font-style: normal;
-line-height: 24px; /* 150% */
+line-height: 1.5; /* 150% */
 
 }
 
@@ -48,7 +48,7 @@ line-height: 24px; /* 150% */
 .container {
     margin: 0 auto;
     padding: 0 10px;
-    max-width: 1276px;;
+    max-width: 1300px;;
 }
 
 h1, h2, h3{
@@ -58,20 +58,27 @@ h1, h2, h3{
  h1{
 font-size: 56px;
 
-line-height: 68px; /* 121.429% */
+line-height: 1.21 /* 121.429% */
  }
 
  /* H2 Heading */
  h2{
 
 font-size: 48px;
-
-line-height: 58px; /* 120.833% */
+line-height: 1.2; /* 120.833% */
  }
  h3{
 /* H3 Heading */
 font-size: 36px;
-line-height: 54px; /* 150% */
+line-height: 1.2 /* 150% */
+ }
+
+ .link{
+    display: flex;
+    column-gap: 12px;
+ }
+ .link a{
+    color: #444CFC;
  }
 
 
