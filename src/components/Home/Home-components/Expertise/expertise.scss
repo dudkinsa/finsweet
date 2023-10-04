@@ -1,0 +1,41 @@
+.expertise {
+  background: var(--azure);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 0;
+  }
+  &__text {
+    width: 622px;
+  }
+  &__text h2 {
+    margin-bottom: 24px;
+  }
+
+  &__right {
+    width: 515px;
+  }
+  &__right--shape {
+    position: relative;
+    top: 7px;
+  }
+}
+
+.list {
+  width: 515px;
+}
+.item {
+  display: flex;
+  column-gap: 16px;
+  padding: 32px 117px 32px 32px;
+
+  background: #fff;
+}
+.item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.item p {
+  font-size: 14px;
+}

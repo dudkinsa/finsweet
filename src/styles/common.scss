@@ -5,6 +5,7 @@
     --white: #ffffff;
     --secondary-orange: #FFD3AF;
     --echinoidea: #FFA155;
+    --azure: #ECF8F9;
     
 
     /* Navbar */
@@ -60,6 +61,9 @@ font-size: 56px;
 
 line-height: 1.21 /* 121.429% */
  }
+ .caption{
+    text-transform: uppercase;
+ }
 
  /* H2 Heading */
  h2{
@@ -71,6 +75,12 @@ line-height: 1.2; /* 120.833% */
 /* H3 Heading */
 font-size: 36px;
 line-height: 1.2 /* 150% */
+ }
+
+ h6{
+    font-size: 16px;
+font-weight: 600;
+line-height: 1.6; /* 175% */
  }
 
  .link{
