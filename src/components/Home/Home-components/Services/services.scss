@@ -1,0 +1,44 @@
+.caption {
+  margin-bottom: 12px;
+}
+
+.services {
+  background: var(--serenade);
+  padding: 96px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top h2 {
+    width: 777px;
+    margin-bottom: 40px;
+  }
+  &__top button {
+    margin-bottom: 100px;
+  }
+
+  &__bottom {
+    
+    display: flex;
+    column-gap: 32px;
+   
+  }
+}
+.service {
+    background: var( --white);
+    padding: 48px 31px 44px 48px; 
+    width: 405px;
+}
+.service img{
+    margin-bottom: 16px;
+}
+.service h6{
+    margin-bottom: 8px;
+}
+.service p{
+    margin-bottom: 24px;
+}
+.link {
+}

@@ -1,0 +1,28 @@
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+
+  padding: 20px 32px;
+  height: 64px;
+  background: #444cfc;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  &__decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__text{
+    color: #fff;
+  }
+}
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.5;
+}

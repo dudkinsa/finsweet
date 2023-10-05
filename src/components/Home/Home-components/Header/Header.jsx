@@ -14,6 +14,7 @@ import logo4 from './assets/img/Logo-4.svg';
 import logo5 from './assets/img/Logo-5.svg';
 
 import Slider from '../SliderLogos/Slider';
+import Button from '../../../Button/Button';
 
 
 function id() {
@@ -65,15 +66,7 @@ const Header = () => {
                 The entire Finsweet team knows what's good with Webflow and you
                 can too with 1 week and a good attitude.
               </p>
-              <button className="text__button">
-                <img
-                  className="text__button--decor"
-                  src={decorBtn}
-                  alt="decor button"
-                />
-                <span>Request Quote </span>
-                <img className="text__button-icon" src={prev} alt="prev" />
-              </button>
+              <Button text="Request Quote"/>
             </div>
 
             <div className="image">
