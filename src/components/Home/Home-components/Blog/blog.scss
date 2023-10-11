@@ -1,0 +1,38 @@
+.blog {
+  display: flex;
+  background: var(--azure);
+
+  &__wrapper {
+    padding: 96px 0;
+  }
+
+  &__decor {
+    margin-bottom: 19px;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__image {
+    width: 296px;
+  }
+
+  &__info-text {
+    background: var(--white);
+    padding: 32px;
+  }
+  &__info-text p {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 8px;
+  }
+  &__info-text h4 {
+   margin-bottom: 24px;
+  }
+}
+
+.blogs {
+  display: flex;
+  column-gap: 32px;
+}

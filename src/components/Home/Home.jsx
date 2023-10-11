@@ -6,6 +6,7 @@ import Expertise from './Home-components/Expertise/Expertise';
 import Services from './Home-components/Services/Services';
 import Process from './Home-components/Process/Process';
 import Review from './Home-components/Review/Review';
+import Blog from './Home-components/Blog/Blog';
 
 
 
@@ -18,6 +19,7 @@ const Home = () => {
     <Services />
     <Process />
     <Review />
+    <Blog />
     </>
   );
 };

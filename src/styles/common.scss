@@ -10,6 +10,7 @@
     --serenade: #FFE6D2;
     --ghost: #F9F9FF;
     
+    
 
     /* Navbar */
     --background-navbar: var(--black-velvet);
@@ -79,6 +80,15 @@ line-height: 1.2; /* 120.833% */
 /* H3 Heading */
 font-size: 36px;
 line-height: 1.2 /* 150% */
+ }
+ h4{
+    color: #232536;
+/* H4 Heading */
+
+font-size: 24px;
+
+font-weight: 600;
+line-height: 1.5 /* 150% */
  }
 
  h6{
