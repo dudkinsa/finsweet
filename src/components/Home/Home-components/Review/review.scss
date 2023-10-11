@@ -1,0 +1,51 @@
+.review {
+  background: var(--ghost);
+  padding: 96px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  &__left {
+    width: 502px;
+  }
+  &__left img,
+  h2 {
+    margin-bottom: 16px;
+  }
+  &__paragraph-big {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.55; /* 155.556% */
+  }
+
+  &__paragraph-small {
+    margin-bottom: 24px;
+  }
+
+  &__testimonial {
+    display: flex;
+    position: relative;
+  }
+  &__quote{
+    position: absolute;
+    right: 25px;
+    top: -17px;
+    z-index: 2;
+  }
+
+}
+
+.members {
+  &__customer {
+    display: flex;
+    column-gap: 12px;
+  }
+
+  &__info {
+    color: #000;
+    font-weight: 500;
+  }
+}

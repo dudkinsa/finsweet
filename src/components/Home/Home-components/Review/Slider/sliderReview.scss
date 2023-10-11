@@ -1,0 +1,45 @@
+:root {
+    --swiper-theme-color: var(--black);
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-bullet-inactive-color: var(--black);
+    
+  }
+.swiper {
+    background-color: #fff;
+    width: 607px;
+    height: 100%;
+  }
+
+  .slide{
+    display: flex;
+    flex-direction: column;
+    padding: 48px 42px 42px 40px;
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+    &__left div{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__left img{
+        width: 38px;
+      }
+}
+.slide h4{
+font-size: 24px;
+font-weight: 600;
+width: 498px;
+margin-bottom: 24px;
+
+}
+
+
+
