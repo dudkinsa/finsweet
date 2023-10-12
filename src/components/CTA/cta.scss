@@ -1,0 +1,62 @@
+.cta {
+  padding: 96px 0;
+
+  &__wrapper {
+    position: relative;
+    background: var(--secondary-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__decor-vertical {
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+  }
+  &__inner {
+    // padding: 96px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    width: 488px;
+    margin: 0 122px 0 96px;
+  }
+  &__left  div, h3{
+    color: #fff;
+  }
+
+  &__title {
+  }
+
+  &__right {
+    background: #fff;
+    width: 456px;
+    // height: 64px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  &__right input{
+    margin: 20px 0 20px  32px ;
+  }
+  &__right button{
+      width: 144px;
+      background: var( --secondary-orange);
+  }
+}
+.btn-text{
+  margin: 32px;
+}
+
+.input{
+  
+}
+
+

@@ -7,6 +7,7 @@ import Services from './Home-components/Services/Services';
 import Process from './Home-components/Process/Process';
 import Review from './Home-components/Review/Review';
 import Blog from './Home-components/Blog/Blog';
+import CTA from '../CTA/CTA';
 
 
 
@@ -20,6 +21,7 @@ const Home = () => {
     <Process />
     <Review />
     <Blog />
+    <CTA />
     </>
   );
 };
