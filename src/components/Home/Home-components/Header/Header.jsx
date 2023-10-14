@@ -66,7 +66,9 @@ const Header = () => {
                 The entire Finsweet team knows what's good with Webflow and you
                 can too with 1 week and a good attitude.
               </p>
+              <div className="text__button">
               <Button text="Request Quote"/>
+              </div>
             </div>
 
             <div className="image">
