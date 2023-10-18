@@ -10,9 +10,9 @@ import maintenance from './icons/maintenance.svg';
 import line from './img/line.svg';
 import decorHorizontal from './img/decor-horizontal.svg'
 
-const Process = () => {
+const Process = ({backgroundColor}) => {
   return (
-    <div className="process">
+    <div className="process" style={backgroundColor}>
       <div className="container">
         <div className="process__wrapper">
           <div className="process__top">

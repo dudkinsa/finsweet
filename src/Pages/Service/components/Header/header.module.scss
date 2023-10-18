@@ -1,0 +1,38 @@
+.header {
+  background: var(--serenade);
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 96px 0;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    width: 625px;
+    margin-right: 251px;
+  }
+  &__left h2 {
+    margin-bottom: 24px;
+  }
+  &__left p {
+    opacity: 0.6;
+    margin-bottom: 40px;
+
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+  &__right a {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+}
+.caption {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  margin-bottom: 16px;
+}

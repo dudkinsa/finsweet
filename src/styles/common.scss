@@ -1,142 +1,140 @@
 :root {
-    --text-color: color: #5D5F6D;
-    
-    --black: #232536;
-    --black-velvet: #232536;
-    --white: #ffffff;
-    --secondary-orange: #FFD3AF;
-    --echinoidea: #FFA155;
-    --azure: #ECF8F9;
-    --serenade: #FFE6D2;
-    --ghost: #F9F9FF;
-    --secondary-blue: #666DFF;
-   
-    
-    
+  --text-color: #5d5f6d;
+  --dark: #232536;
+  --black: #232536;
+  --black-velvet: #232536;
+  --white: #ffffff;
+  --secondary-orange: #ffd3af;
+  --echinoidea: #ffa155;
+  --azure: #ecf8f9;
+  --serenade: #ffe6d2;
+  --ghost: #f9f9ff;
+  --secondary-blue: #666dff;
 
-    /* Navbar */
-    --background-navbar: var(--black-velvet);
-    --text-navbar: var(--white);
-    --clone-text:var(--secondary-orange);
-    --active: var(--echinoidea);
-    
-    /* Header-home */
-    --background-header: var(--black-velvet);
-    --text-header: var(--white);
-    /* Mobile-menu */
-    --background-menu: var(--black-velvet);
-    --text-menu: var(--white);
+  /* Navbar */
+  --background-navbar: var(--black-velvet);
+  --text-navbar: var(--white);
+  --clone-text: var(--secondary-orange);
+  --active: var(--echinoidea);
+
+  /* Header-home */
+  --background-header: var(--black-velvet);
+  --text-header: var(--white);
+  /* Mobile-menu */
+  --background-menu: var(--black-velvet);
+  --text-menu: var(--white);
 }
 
 body {
-/* Paragraph */
-color: #232536;
-font-family: Poppins, sans-serif;
-font-size: 16px;
-font-weight: 500;
-font-style: normal;
-line-height: 1.5; /* 150% */
-color: var(--black);
- overflow-x: hidden;
-
+  /* Paragraph */
+  color: #232536;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5; /* 150% */
+  color: var(--black);
+  overflow-x: hidden;
 }
 
-.none{
-    display: none;
+.none {
+  display: none;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 1320px;;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1320px;
 }
 
-h1, h2, h3{
-    font-weight: 600;
+h1,
+h2,
+h3 {
+  font-weight: 600;
 }
 /* H1 Heading */
- h1{
-font-size: 56px;
+h1 {
+  font-size: 56px;
 
-line-height: 1.21 /* 121.429% */
- }
- .caption{
-    text-transform: uppercase;
- }
+  line-height: 1.21; /* 121.429% */
+}
+.caption {
+  color: var(--dark);
+  font-size: 14px;
+  line-height: 1.42; /* 142.857% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
 
- /* H2 Heading */
- h2{
+/* H2 Heading */
+h2 {
+  font-size: 48px;
+  line-height: 1.2; /* 120.833% */
+}
+h3 {
+  /* H3 Heading */
+  font-size: 36px;
+  line-height: 1.2; /* 150% */
+}
+h4 {
+  color: #232536;
+  /* H4 Heading */
 
-font-size: 48px;
-line-height: 1.2; /* 120.833% */
- }
- h3{
-/* H3 Heading */
-font-size: 36px;
-line-height: 1.2 /* 150% */
- }
- h4{
-    color: #232536;
-/* H4 Heading */
+  font-size: 24px;
 
-font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5; /* 150% */
+}
 
-font-weight: 600;
-line-height: 1.5 /* 150% */
- }
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6; /* 175% */
+}
 
- h6{
-    font-size: 16px;
-font-weight: 600;
-line-height: 1.6; /* 175% */
- }
+.link {
+  display: flex;
+  column-gap: 12px;
+}
+.link a {
+  color: #444cfc;
+}
 
- .link{
-    display: flex;
-    column-gap: 12px;
- }
- .link a{
-    color: #444CFC;
- }
+@media (max-width: 1340px) {
+  .caption {
+    text-align: center;
+  }
+}
 
- @media (max-width: 1340px) {
-    .caption {
-        text-align: center;
-    }
- }
+@media (max-width: 1210px) {
+  h1 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
 
- @media (max-width: 1210px){
-    h1{
-        font-size: 20px;
-        line-height: 1.5;
-    }
-    h2{
-      
-        font-size: 20px;
-        line-height: 1.2
-    }
-    p{
-        font-size: 14px;
-        line-height: 1.2;
-    }
- }
+@media (max-width: 420px) {
+  h1 {
+    font-size: 23px;
+    line-height: 1.3;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 15px;
+  }
 
- @media (max-width: 420px){
-     h1 {
-         font-size: 23px;
-         line-height: 1.3;
-     }
-     h2 {
-        font-size: 20px;
-    }
-     h3 {
-        font-size: 15px;
-    }
-
-     p{
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-
- }
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}

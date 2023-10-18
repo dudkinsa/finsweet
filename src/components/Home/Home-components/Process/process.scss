@@ -1,5 +1,6 @@
 .process {
   padding: 96px 0;
+ 
 
   &__wrapper {
     display: flex;
@@ -12,18 +13,23 @@
     display: flex;
     flex-direction: column;
   }
-  &__top .title {
-    width: 733px;
-    margin-bottom: 16px;
-  }
-  &__top .text {
-    width: 642px;
-    margin-bottom: 68px;
-  }
+ 
   &__bottom {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.top{
+  &__title {
+    width: 733px;
+    margin-bottom: 16px;
+  }
+  &__text {
+    width: 642px;
+    margin-bottom: 68px;
+  }
+
 }
 
 .box {
