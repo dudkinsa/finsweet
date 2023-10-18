@@ -119,10 +119,11 @@ a {
   &__wrapper{
     background: var(--serenade);
   }
+}
 
-  &__logo {
-  }
-
-  &__copyright {
-  }
+@media (max-width: 900px) {
+  .footer-top-left {
+    
+    margin-right: unset;
+}
 }

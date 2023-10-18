@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
   }
-  &__text{
+  &__text {
     color: #fff;
   }
 }
@@ -25,4 +25,16 @@
 
 .button:active {
   opacity: 0.5;
+}
+
+@media (max-width: 420px) {
+  .button {
+    height: 45px;
+    &__text{
+      font-size: 13px;
+    }
+    &__decor {
+      width: 23px;
+  }
+  }
 }

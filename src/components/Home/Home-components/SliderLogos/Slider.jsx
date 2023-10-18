@@ -16,8 +16,9 @@ const Slider = ({ logos }) => {
     <div className="slider">
       <Swiper
         modules={[Pagination]}
-        spaceBetween={10}
-        slidesPerView={1}
+        spaceBetween={11}
+        slidesPerView={3}
+        loop={true}
         pagination={{
           clickable: true,
         }}
@@ -25,7 +26,7 @@ const Slider = ({ logos }) => {
         {logos.map((logo) => {
           return (
             <SwiperSlide key={logo.id}>
-              <img src={logo.image} alt={logo.title} />
+              <img className='slider__img' src={logo.image} alt={logo.title} />
             </SwiperSlide>
           );
         })}

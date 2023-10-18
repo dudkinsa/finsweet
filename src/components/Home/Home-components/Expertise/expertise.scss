@@ -39,3 +39,39 @@
 .item p {
   font-size: 14px;
 }
+
+@media (max-width: 1340px) {
+  .expertise {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__text {
+     margin: 0 30px;
+     width: 640px;
+    }
+    &__text p {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .expertise {
+    &__wrapper {
+      padding: 30px 0;
+    }
+    &__text {
+      width: 372px;
+     
+    }
+    &__right {
+      width: unset;
+    }
+  }
+  .list {
+    width: unset;
+  }
+  .item {
+    padding: 32px;
+  }
+}

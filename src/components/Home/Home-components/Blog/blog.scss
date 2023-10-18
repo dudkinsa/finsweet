@@ -28,11 +28,52 @@
     margin-bottom: 8px;
   }
   &__info-text h4 {
-   margin-bottom: 24px;
+    margin-bottom: 24px;
+    width: 264px;
   }
 }
 
 .blogs {
   display: flex;
   column-gap: 32px;
+}
+@media (max-width: 1210px) {
+  .blogs {
+    column-gap: unset;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .blog__info-text h4 {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .blog {
+    &__wrapper {
+      padding: 30px 0;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .blog {
+    flex-direction: column;
+    &__image {
+      width: 372px;
+    }
+    &__info-text h4 {
+      margin-bottom: 15px;
+     
+  }
+
+    &__info-text {
+      padding: unset;
+    }
+    &__info-text h4 {
+      width: 372px;
+    }
+  }
+  .link {
+    margin-bottom: 10px;
+}
 }

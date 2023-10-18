@@ -41,5 +41,14 @@ margin-bottom: 24px;
 
 }
 
-
+@media (max-width: 420px) {
+  .slide h4{
+    font-size: 14px;
+    width: 398px;
+    padding: 0 20px;
+    }
+    .slide__bottom {
+      padding: 0 20px;
+  }
+}
 

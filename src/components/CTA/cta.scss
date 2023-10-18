@@ -28,7 +28,8 @@
     width: 488px;
     margin: 0 122px 0 96px;
   }
-  &__left  div, h3{
+  &__left div,
+  h3 {
     color: #fff;
   }
 
@@ -41,22 +42,69 @@
     // height: 64px;
     display: flex;
     justify-content: space-between;
-    
   }
-  &__right input{
-    margin: 20px 0 20px  32px ;
+  &__right input {
+    margin: 20px 0 20px 32px;
   }
-  &__right button{
-      width: 144px;
-      background: var( --secondary-orange);
+  &__right button {
+    width: 144px;
+    background: var(--secondary-orange);
   }
 }
-.btn-text{
+.btn-text {
   margin: 32px;
 }
 
-.input{
-  
+@media (max-width: 1210px) {
+  .cta {
+    &__inner {
+      flex-direction: column;
+      row-gap: 32px;
+      margin: 0 auto;
+    }
+  }
 }
 
-
+@media (max-width: 420px) {
+  .cta {
+    padding: unset;
+    &__wrapper {
+      margin-bottom: 30px;
+    }
+    &__inner {
+      width: 372px;
+      padding: 30px 0;
+    }
+    &__decor {
+      width: 10%;
+    }
+    &__left {
+      width: 372px;
+      margin: unset;
+    }
+    &__title {
+      width: 330px;
+      margin: 0 auto;
+    }
+    &__decor-vertical {
+      display: none;
+    }
+    &__right {
+      width: unset;
+    }
+    &__right input {
+      margin: 15px;
+      text-align: center;
+      font-size: 14px;
+      width: 200px;
+    }
+    &__right button {
+      width: 100px;
+      background: var(--secondary-orange);
+    }
+  }
+  .btn-text {
+    margin: 10px;
+    font-size: 14px;
+  }
+}

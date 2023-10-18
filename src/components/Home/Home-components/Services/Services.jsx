@@ -34,7 +34,7 @@ const Services = () => {
               </p>
               <div className="link">
                 <a href="#!">Read about us</a>
-                <img src={iconPrev} alt="Icon prev" />
+                <img className='image-prev' src={iconPrev} alt="Icon prev" />
               </div>
             </div>
             <div className="service">
@@ -47,7 +47,7 @@ const Services = () => {
               </p>
               <div className="link">
                 <a href="#!">Read about us</a>
-                <img src={iconPrev} alt="Icon prev" />
+                <img  className='image-prev'src={iconPrev} alt="Icon prev" />
               </div>
             </div>
             <div className="service">
@@ -60,7 +60,7 @@ const Services = () => {
               </p>
               <div className="link">
                 <a href="#!">Read about us</a>
-                <img src={iconPrev} alt="Icon prev" />
+                <img className='image-prev' src={iconPrev} alt="Icon prev" />
               </div>
             </div>
            

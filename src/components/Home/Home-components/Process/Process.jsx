@@ -39,8 +39,8 @@ const Process = () => {
               <path d="M16 8L27 8L27 19L16 19L16 8Z" fill="#FFD3AF" />
             </svg>
             <div className="caption">Our Process</div>
-            <h2>The process we are working With Our client Worldwide</h2>
-            <p>
+            <h2 className='top__title'> The process we are working With Our client Worldwide</h2>
+            <p className='top__text'>
               Through True Rich Attended does no end it his mother since real
               had half every him case in packages enquire we up ecstatic
               unsatiable.
@@ -69,8 +69,8 @@ const Process = () => {
               <div className="box__inner">
                 <img className="icon" src={designing} alt="icon" />
                 <div className="right">
-                  <h6>Designing</h6>
-                  <p>
+                  <h6 className='right__title'>Designing</h6>
+                  <p className='right__text'>
                     We aim to attain the greatest satisfaction for our clients
                     and be one of the prominent.
                   </p>
@@ -108,7 +108,7 @@ const Process = () => {
                 </div>
               </div>
             </div>
-            <img src={line} alt="" />
+            <img className='line' src={line} alt="" />
             <div className="box">
               <div className="step">05</div>
 
@@ -123,7 +123,7 @@ const Process = () => {
                 </div>
               </div>
             </div>
-            <img src={line} alt="" />
+            <img className='line' src={line} alt="" />
 
             <div className="box">
               <div className="step">06</div>
