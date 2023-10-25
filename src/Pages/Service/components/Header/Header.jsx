@@ -23,19 +23,43 @@ const Header = () => {
             </div>
           </div>
           <div className={styles.header__right}>
-            <Link to="support" smooth={true}>
+            <Link
+              to="support"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               Technical support
             </Link>
-            <Link to="support" smooth={true}>
+            <Link
+              to="developoment"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               Development
             </Link>
-            <Link to="support" smooth={true}>
+            <Link
+              to="azure"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               AWS/Azure
             </Link>
-            <Link to="support" smooth={true}>
+            <Link
+              to="consulting"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               Consulting
             </Link>
-            <Link to="support" smooth={true}>
+            <Link to="it" spy={true} smooth={true} offset={50} duration={500}>
               Information Technology
             </Link>
           </div>

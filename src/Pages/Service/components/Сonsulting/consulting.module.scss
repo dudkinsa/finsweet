@@ -1,0 +1,44 @@
+.consulting{
+  background: var(--ghost);
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 96px;
+  }
+
+  &__text {
+    width: 625px;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0.9;
+    margin-bottom: 16px;
+  }
+  &__subtitle {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.5; /* 150% */
+  }
+  &__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    opacity: 0.6;
+  }
+  &__backgroundWhite{
+    background: var(--white);
+  }
+  &__backgroundconsulting{
+    background: var(--consulting);
+  }
+  &__backgroundGhost{
+    background: var(--ghost);
+  }
+}
+
