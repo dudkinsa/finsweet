@@ -9,6 +9,7 @@ import Developoment from './components/Developoment/Developoment';
 import Azure from './components/Azure/Azure ';
 import Сonsulting from './components/Сonsulting/Сonsulting';
 import IT from './components/IT/IT';
+import CTA from '../../components/CTA/CTA'
 
 import support from './img/support.jpg';
 import developoment from './img/developoment.jpg';
@@ -78,6 +79,7 @@ const Service = () => {
       <Azure services={services} />
       <Сonsulting services={services} />
       <IT services={services} />
+      <CTA />
     </>
   );
 };

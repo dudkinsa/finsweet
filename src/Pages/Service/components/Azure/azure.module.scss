@@ -41,3 +41,15 @@
   }
 }
 
+@media (max-width: 1230px) {
+  .azure{
+    &__box{
+      flex-direction: column;
+      padding: 40px 0;
+    }
+    &__subtitle, &__desc{
+      margin-bottom: 30px;
+    }
+  }
+}
+

@@ -42,3 +42,15 @@
   }
 }
 
+@media (max-width: 1230px) {
+  .consulting{
+    &__box{
+      flex-direction: column-reverse;
+      padding: 40px 0;
+    }
+    &__subtitle, &__desc{
+      margin-bottom: 30px;
+    }
+  }
+}
+

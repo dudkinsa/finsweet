@@ -42,3 +42,14 @@
   }
 }
 
+@media (max-width: 1230px) {
+  .developoment{
+    &__box{
+      flex-direction: column-reverse;
+      padding: 50px 0;
+    }
+    &__subtitle, &__desc{
+      margin-bottom: 30px;
+    }
+  }
+}

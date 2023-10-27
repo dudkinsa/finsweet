@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './header.module.scss';
 import Button from '../../../../components/Button/Button';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import {Link} from 'react-scroll';
 
 const Header = () => {
   return (
@@ -27,8 +27,8 @@ const Header = () => {
               to="support"
               spy={true}
               smooth={true}
-              offset={50}
-              duration={500}
+              offset={-100}
+              duration={1000}
             >
               Technical support
             </Link>
@@ -36,8 +36,8 @@ const Header = () => {
               to="developoment"
               spy={true}
               smooth={true}
-              offset={50}
-              duration={500}
+              offset={-100}
+              duration={1000}
             >
               Development
             </Link>
@@ -45,8 +45,8 @@ const Header = () => {
               to="azure"
               spy={true}
               smooth={true}
-              offset={50}
-              duration={500}
+              offset={-100}
+              duration={1000}
             >
               AWS/Azure
             </Link>
@@ -54,12 +54,12 @@ const Header = () => {
               to="consulting"
               spy={true}
               smooth={true}
-              offset={50}
-              duration={500}
+              offset={-100}
+              duration={1000}
             >
               Consulting
             </Link>
-            <Link to="it" spy={true} smooth={true} offset={50} duration={500}>
+            <Link to="it" spy={true} smooth={true} offset={-110} duration={1000}>
               Information Technology
             </Link>
           </div>

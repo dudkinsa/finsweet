@@ -36,3 +36,16 @@
     text-transform: uppercase;
   margin-bottom: 16px;
 }
+
+@media (max-width: 1230px) {
+  .header{
+    &__left{
+      margin-right: unset;
+      width: 300px;
+      padding: 0 20px;
+    }
+    &__wrapper{
+      justify-content: space-evenly;
+    }
+  }
+}
