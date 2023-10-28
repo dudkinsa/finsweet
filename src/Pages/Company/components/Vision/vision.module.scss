@@ -14,3 +14,11 @@
         opacity: 0.6;
     }
 }
+
+@media (max-width: 1340px){
+    .vision{
+        &__wrapper{
+            align-items: center;
+        }
+    }
+}
