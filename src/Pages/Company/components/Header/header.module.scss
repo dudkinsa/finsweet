@@ -20,7 +20,7 @@
   }
   &__top p {
     width: 720px;
-    opacity: 0.9;
+    opacity: 0.8;
     margin-bottom: 40px;
   }
 
@@ -60,6 +60,9 @@
 @media (max-width: 800px) {
 .header{
   padding: unset;
+  &__top h2, &__top p{
+    width: unset;
+  }
   &__images img{
     width: 100%;
   }
