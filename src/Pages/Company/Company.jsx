@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import CTA from './../../components/CTA/CTA';
 import Story from './components/Story/Story';
 import LogoBar from './components/LogoBar/LogoBar';
+import Expertise from '../../components/Home/Home-components/Expertise/Expertise';
 
 const Company = () => {
   return (
@@ -11,6 +12,7 @@ const Company = () => {
       <Header />
       <Story />
       <LogoBar />
+      <Expertise />
       <CTA />
     </>
   );
