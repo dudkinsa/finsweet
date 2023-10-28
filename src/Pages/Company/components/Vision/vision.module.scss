@@ -1,0 +1,16 @@
+.vision{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 96px 0;
+    }
+    &__title{
+        width: 701px;
+        margin-bottom: 24px;
+    }
+    &__text{
+        width: 622px;
+        margin-bottom: 64px;
+        opacity: 0.6;
+    }
+}

@@ -1,7 +1,13 @@
 import React from 'react';
 import styles from './story.module.scss';
+import uuid from 'react-uuid';
 import shape from './img/shape.svg';
 import decorHorizontal from './img/decor-horizontal.svg';
+
+function id() {
+    return uuid();
+  }
+  
 
 const statistics = [
   {
@@ -51,7 +57,7 @@ const Story = () => {
           <div className={styles.story__left}>
             {statistics.map((statistic) => {
               return (
-                <div className={statistic.class}>
+                <div className={statistic.class} key={id()}>
                   <h3>{statistic.title}</h3>
                   <img src={statistic.image} alt="Decor" />
                   <p>{statistic.text}</p>
