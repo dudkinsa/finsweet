@@ -1,5 +1,5 @@
 import React from 'react';
-import './process.scss';
+import styles from './process.module.scss';
 
 import discover from './icons/discover.svg';
 import designing from './icons/designing.svg';
@@ -8,16 +8,65 @@ import testing from './icons/testing.svg';
 import deployment from './icons/deployment.svg';
 import maintenance from './icons/maintenance.svg';
 import line from './img/line.svg';
-import decorHorizontal from './img/decor-horizontal.svg'
+import decorHorizontal from './img/decor-horizontal.svg';
 
-const Process = ({backgroundColor}) => {
+const boxes = [
+  {
+    step: '01',
+    image: discover,
+    title: 'Discover',
+    text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent.',
+    imageDecorBottom: (
+      <img className={styles.box__decorBottom} src={decorHorizontal} alt="decor" />
+    ),
+    imageLine: <img className={styles.line} src={line} alt="Line" />,
+  },
+  {
+    step: '02',
+    image: designing,
+    title: 'Designing',
+    text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent.',
+    imageLine: <img className={styles.line} src={line} alt="Line" />,
+  },
+  {
+    step: '03',
+    image: development,
+    title: 'Development',
+    text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent.',
+  },
+  {
+    step: '04',
+    image: testing,
+    title: 'Testing',
+    text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent',
+    imageLine: <img className={styles.line} src={line} alt="Line" />,
+  },
+  {
+    step: '05',
+    image: deployment,
+    title: 'Deployment',
+    text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent',
+    imageLine: <img className={styles.line} src={line} alt="Line" />,
+  },
+  {
+    step: '06',
+    image: maintenance,
+    title: 'Maintenance',
+    text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent.',
+    imageDecorTop: (
+      <img className={styles.box__decorTop} src={decorHorizontal} alt="decor" />
+    ),
+  },
+];
+
+const Process = ({ backgroundColor }) => {
   return (
-    <div className="process" style={backgroundColor}>
+    <div className={styles.process} style={backgroundColor}>
       <div className="container">
-        <div className="process__wrapper">
-          <div className="process__top">
+        <div className={styles.process__wrapper}>
+          <div className={styles.process__top}>
             <svg
-              className="shape"
+              className={styles.shape}
               xmlns="http://www.w3.org/2000/svg"
               width="27"
               height="29"
@@ -39,107 +88,36 @@ const Process = ({backgroundColor}) => {
               <path d="M16 8L27 8L27 19L16 19L16 8Z" fill="#FFD3AF" />
             </svg>
             <div className="caption">Our Process</div>
-            <h2 className='top__title'> The process we are working With Our client Worldwide</h2>
-            <p className='top__text'>
+            <h2 className={styles.top__title}>
+              The process we are working With Our client Worldwide
+            </h2>
+            <p className={styles.top__text}>
               Through True Rich Attended does no end it his mother since real
               had half every him case in packages enquire we up ecstatic
               unsatiable.
             </p>
           </div>
-          <div className="process__bottom">
-            <div className="box">
-              <div className="step">01</div>
+          <div className={styles.process__bottom}>
+            {boxes.map((box) => {
+              return (
+                <>
+                  <div className={styles.box}>
+                    <div className={styles.step}>{box.step}</div>
 
-              <div className="box__inner">
-                <img className="icon" src={discover} alt="icon" />
-                <div className="right">
-                  <h6>Discover</h6>
-                  <p>
-                    We aim to attain the greatest satisfaction for our clients
-                    and be one of the prominent.
-                  </p>
-                </div>
-              </div>
-              <img className='box__decor-bottom' src={decorHorizontal} alt="decor" />
-            </div>
-            <img className='line' src={line} alt="" />
-            <div className="box">
-              <div className="step">02</div>
-
-              <div className="box__inner">
-                <img className="icon" src={designing} alt="icon" />
-                <div className="right">
-                  <h6 className='right__title'>Designing</h6>
-                  <p className='right__text'>
-                    We aim to attain the greatest satisfaction for our clients
-                    and be one of the prominent.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <img className='line' src={line} alt="" />
-
-            <div className="box">
-              <div className="step">03</div>
-
-              <div className="box__inner">
-                <img className="icon" src={development} alt="icon" />
-                <div className="right">
-                  <h6>Development</h6>
-                  <p>
-                    We aim to attain the greatest satisfaction for our clients
-                    and be one of the prominent.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="box">
-              <div className="step">04</div>
-
-              <div className="box__inner">
-                <img className="icon" src={testing} alt="icon" />
-                <div className="right">
-                  <h6>Testing</h6>
-                  <p>
-                    We aim to attain the greatest satisfaction for our clients
-                    and be one of the prominent.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <img className='line' src={line} alt="" />
-            <div className="box">
-              <div className="step">05</div>
-
-              <div className="box__inner">
-                <img className="icon" src={deployment} alt="icon" />
-                <div className="right">
-                  <h6>Deployment</h6>
-                  <p>
-                    We aim to attain the greatest satisfaction for our clients
-                    and be one of the prominent.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <img className='line' src={line} alt="" />
-
-            <div className="box">
-              <div className="step">06</div>
-
-              <div className="box__inner">
-                <img className="icon" src={maintenance} alt="icon" />
-                <div className="right">
-                  <h6>Maintenance</h6>
-                  <p>
-                    We aim to attain the greatest satisfaction for our clients
-                    and be one of the prominent.
-                  </p>
-                </div>
-              </div>
-              <img className='box__decor-top' src={decorHorizontal} alt="decor" />
-            </div>
+                    {box.imageDecorBottom}
+                    <div className={styles.box__inner}>
+                      <img className={styles.icon} src={box.image} alt="Icon" />
+                      <div className={styles.right}>
+                        <h6>{box.title}</h6>
+                        <p>{box.text}</p>
+                      </div>
+                      {box.imageDecorTop}
+                    </div>
+                  </div>
+                  {box.imageLine}
+                </>
+              );
+            })}
           </div>
         </div>
       </div>
