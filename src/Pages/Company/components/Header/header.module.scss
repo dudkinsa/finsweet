@@ -60,6 +60,12 @@
 @media (max-width: 800px) {
 .header{
   padding: unset;
+  &__shape{
+    width: 30px;
+  }
+  &__decor{
+    width: 20px;
+  }
   &__top h2, &__top p{
     width: unset;
   }
