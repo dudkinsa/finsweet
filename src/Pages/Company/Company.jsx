@@ -6,6 +6,7 @@ import Story from './components/Story/Story';
 import LogoBar from './components/LogoBar/LogoBar';
 import Expertise from '../../components/Home/Home-components/Expertise/Expertise';
 import Vision from './components/Vision/Vision';
+import Team from './components/Team/Team';
 
 const Company = () => {
   return (
@@ -15,7 +16,8 @@ const Company = () => {
       <LogoBar />
       <Expertise />
       <Vision />
-      <CTA />
+      <Team />
+      <CTA paddingTop ={{ 'padding-top': '0'}}/>
     </>
   );
 };

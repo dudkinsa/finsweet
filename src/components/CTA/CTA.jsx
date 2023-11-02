@@ -3,9 +3,9 @@ import './cta.scss';
 import decor from './img/shape.svg';
 import decorVertical from './img/decor-vertical.svg';
 
-const CTA = () => {
+const CTA = ({paddingTop}) => {
   return (
-    <div className="cta">
+    <div className="cta" style={paddingTop}>
       <div className="container">
         <div className="cta__wrapper">
        
