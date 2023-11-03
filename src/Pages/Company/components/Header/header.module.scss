@@ -12,8 +12,7 @@
     right: 0;
   }
 
-  &__top {
-  }
+ 
   &__top h2 {
     width: 665px;
     margin-bottom: 24px;
@@ -59,6 +58,9 @@
 
 @media (max-width: 800px) {
 .header{
+  &__top {
+    padding-top: 30px;
+  }
   padding: unset;
   &__shape{
     width: 30px;
@@ -71,6 +73,9 @@
   }
   &__images img{
     width: 100%;
+  }
+  &__shape, &__decor{
+    display: none;
   }
 }
 }

@@ -67,3 +67,26 @@
 
         }
 }
+
+@media (max-width: 800px) {
+  .team{
+    &__title,  &__text {
+      width: unset;
+    }
+    &__text {
+      margin-bottom: 30px;
+    }
+
+  }
+  .member{
+   display: flex;
+  }
+  .member:not(:last-child){
+    margin-bottom: 15px;
+  }
+  .member:last-child{
+
+    margin-bottom: 30px;
+  }
+  
+}

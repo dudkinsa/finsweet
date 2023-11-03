@@ -11,6 +11,15 @@
   &__top {
     display: flex;
     flex-direction: column;
+    width: 733px;
+  }
+  &__title {
+    // width: 733px;
+    margin-bottom: 16px;
+  }
+  &__text {
+    // width: 642px;
+    margin-bottom: 68px;
   }
 
   &__bottom {
@@ -19,16 +28,8 @@
   }
 }
 
-.top {
-  &__title {
-    width: 733px;
-    margin-bottom: 16px;
-  }
-  &__text {
-    width: 642px;
-    margin-bottom: 68px;
-  }
-}
+
+
 
 .box {
   display: flex;
@@ -113,6 +114,9 @@
 
 @media (max-width: 800px) {
   .process {
+    &__top {
+      width: unset;
+    }
   }
 }
 

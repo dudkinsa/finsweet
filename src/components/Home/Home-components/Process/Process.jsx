@@ -87,11 +87,12 @@ const Process = ({ backgroundColor }) => {
               />
               <path d="M16 8L27 8L27 19L16 19L16 8Z" fill="#FFD3AF" />
             </svg>
+
             <div className="caption">Our Process</div>
-            <h2 className={styles.top__title}>
+            <h2 className={styles.process__title}>
               The process we are working With Our client Worldwide
             </h2>
-            <p className={styles.top__text}>
+            <p className={styles.process__text}>
               Through True Rich Attended does no end it his mother since real
               had half every him case in packages enquire we up ecstatic
               unsatiable.
