@@ -1,0 +1,46 @@
+.careers {
+  background: var(--azure);
+  &__wrapper {
+    padding: 78px;
+    display: grid;
+    grid-template-columns: 354px 354px 354px;
+    grid-gap: 32px;
+  }
+}
+
+.career {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  padding: 48px;
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__text1 {
+    margin-bottom: 3px;
+  }
+  &__text2 {
+    margin-bottom: 52px;
+  }
+
+  &__text1,
+  &__text2 {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 1340px) {
+  .careers {
+    &__wrapper {
+      grid-template-columns: 354px 354px;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .careers {
+    &__wrapper {
+      grid-template-columns: 354px;
+    }
+  }
+}

@@ -20,7 +20,7 @@ const Blog = () => {
                 <p>Jan 19, 2021</p>
                 <h4>Today’s best design trends for digital products</h4>
                 <div className="link">
-                  <a href="#!">Read about us</a>
+                  <a href="#!">Read More</a>
                   <img src={iconPrev} alt="Icon prev" />
                 </div>
               </div>
@@ -31,7 +31,7 @@ const Blog = () => {
                 <p>Jan 19, 2021</p>
                 <h4>A practical guide to building a brand strategy</h4>
                 <div className="link">
-                  <a href="#!">Read about us</a>
+                  <a href="#!">Read More</a>
                   <img src={iconPrev} alt="Icon prev" />
                 </div>
               </div>
