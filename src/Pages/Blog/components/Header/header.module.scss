@@ -93,7 +93,10 @@
           &__right {
             width: unset;
             height: unset;
-            padding: 30px 72px 0 72px;
+            padding: 30px 0 0 0;
           }
+    }
+    .post {
+        padding: 0 15px;
     }
 }
