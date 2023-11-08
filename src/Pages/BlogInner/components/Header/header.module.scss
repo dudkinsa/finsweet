@@ -1,0 +1,51 @@
+.header {
+    padding: 96px 0;
+  &__wrapper {
+    position: relative;
+  }
+  
+  &__decor {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__left {
+    width: 731px;
+  }
+  &__shape{
+    margin-bottom: 24px;
+  }
+  &__title{
+    margin-bottom: 24px;
+  }
+  &__text{
+    opacity: 0.8;
+    margin-bottom: 32px;
+  }
+}
+.person {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    margin-bottom: 49px;
+    &__text {
+      opacity: 0.6;
+    }
+  }
+.linkBloger{
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding: 30px 0;
+        &__left {
+            width: unset;
+          }
+          &__decor{
+            display: none;
+          }
+    }
+}
