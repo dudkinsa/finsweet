@@ -4,7 +4,7 @@ import shape from './img/shape.svg';
 import prev from './icons/icon-prev.svg';
 import avatarJonson from './avatars/Andrew_Jonson.svg';
 import avatarJasele from './avatars/Mathew_Jasele.svg';
-import avatarAbakas from './avatars/Mathew_Jasele.svg';
+import avatarAbakas from './avatars/Hussen_Abakas.svg';
 import decorLine from './img/decor-line.svg';
 import decor from './img/decor.svg'
 import image from './img/image.jpg';

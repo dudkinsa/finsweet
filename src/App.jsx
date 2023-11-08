@@ -9,6 +9,7 @@ import Blog from './Pages/Blog/Blog';
 import Contact from './Pages/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import News from './Pages/News/News';
+import BlogInner from './Pages/BlogInner/BlogInner';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/news" element={<News />} />
+          <Route path="/blog-inner" element={<BlogInner />} />
         </Routes>
         <Footer />
       </Router>
