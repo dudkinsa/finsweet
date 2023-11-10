@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import styles from './header.module.scss';
 import shape from './img/shape.svg';
@@ -67,7 +67,7 @@ const Header = () => {
                 The Maker is a decentralized. We aim to attain the.
               </p>
               <div className={`${styles.top__link} link`}>
-                <NavLink to="/blog-inner">Read More </NavLink>
+                <Link to="/blog-inner">Read More </Link>
                 <img src={prev} alt="icon" />
               </div>
               <div className={styles.person}>

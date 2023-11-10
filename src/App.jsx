@@ -10,6 +10,7 @@ import Contact from './Pages/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import News from './Pages/News/News';
 import BlogInner from './Pages/BlogInner/BlogInner';
+import Team from './Pages/Team/Team';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/news" element={<News />} />
           <Route path="/blog-inner" element={<BlogInner />} />
+          <Route path="/egorov" element={<Team />} />
         </Routes>
         <Footer />
       </Router>

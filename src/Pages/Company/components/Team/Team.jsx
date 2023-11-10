@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './team.module.scss';
+import { Link } from 'react-router-dom';
+
 import team1 from './img/team-1.jpg';
 import team2 from './img/team-2.jpg';
 import team3 from './img/team-3.jpg';
@@ -20,6 +22,7 @@ const members = [
     linkTwitter: <img src={twitter} alt="twitter" />,
     linkInstagram: <img src={instagram} alt="instagram" />,
     linkLinkedIn: <img src={linkedIn} alt="linkedIn" />,
+    linkPage: '/egorov',
   },
   {
     name: 'Serg Reut',
@@ -28,6 +31,7 @@ const members = [
     linkTwitter: <img src={twitter} alt="twitter" />,
     linkInstagram: <img src={instagram} alt="instagram" />,
     linkLinkedIn: <img src={linkedIn} alt="linkedIn" />,
+    linkPage: '/reut',
   },
   {
     name: 'Mike Zahonda',
@@ -36,6 +40,7 @@ const members = [
     linkTwitter: <img src={twitter} alt="twitter" />,
     linkInstagram: <img src={instagram} alt="instagram" />,
     linkLinkedIn: <img src={linkedIn} alt="linkedIn" />,
+    linkPage: '/zahonda',
   },
   {
     name: 'Robert  McDonald',
@@ -44,6 +49,7 @@ const members = [
     linkTwitter: <img src={twitter} alt="twitter" />,
     linkInstagram: <img src={instagram} alt="instagram" />,
     linkLinkedIn: <img src={linkedIn} alt="linkedIn" />,
+    linkPage: '/mcDonald',
   },
   {
     name: 'Michael Low',
@@ -52,6 +58,7 @@ const members = [
     linkTwitter: <img src={twitter} alt="twitter" />,
     linkInstagram: <img src={instagram} alt="instagram" />,
     linkLinkedIn: <img src={linkedIn} alt="linkedIn" />,
+    linkPage: '/egorov',
   },
   {
     name: 'David Williams',
@@ -60,6 +67,7 @@ const members = [
     linkTwitter: <img src={twitter} alt="twitter" />,
     linkInstagram: <img src={instagram} alt="instagram" />,
     linkLinkedIn: <img src={linkedIn} alt="linkedIn" />,
+    linkPage: '/williams',
   },
   {
     name: 'Charles Boom',
@@ -68,6 +76,7 @@ const members = [
     linkTwitter: <img src={twitter} alt="twitter" />,
     linkInstagram: <img src={instagram} alt="instagram" />,
     linkLinkedIn: <img src={linkedIn} alt="linkedIn" />,
+    linkPage: '/boom',
   },
   {
     name: 'Nicola Johnson',
@@ -77,6 +86,7 @@ const members = [
     linkTwitter: <img src={twitter} alt="twitter" />,
     linkInstagram: <img src={instagram} alt="instagram" />,
     linkLinkedIn: <img src={linkedIn} alt="linkedIn" />,
+    linkPage: '/johnson',
   },
 ];
 
@@ -103,7 +113,7 @@ const Team = () => {
                     <img className={styles.member__photo} src={member.photo} alt="photo" />
                   
                   <div className={styles.member__textInfo}>
-                    <h4 className={styles.member__title}>{member.name}</h4>
+                    <Link to = {member.linkPage}><h4 className={styles.member__title}>{member.name}</h4></Link>
                     <p className={styles.member__text}>{member.profession}</p>
                     <div className={styles.member__social}>
                       <a href="#!">{member.linkTwitter}</a>

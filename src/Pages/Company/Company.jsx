@@ -9,6 +9,7 @@ import Vision from './components/Vision/Vision';
 import Team from './components/Team/Team';
 
 const Company = () => {
+  
   return (
     <>
       <Header />
@@ -18,6 +19,7 @@ const Company = () => {
       <Vision />
       <Team />
       <CTA paddingTop ={{ 'padding-top': '0'}}/>
+
     </>
   );
 };
