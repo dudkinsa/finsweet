@@ -8,6 +8,7 @@ import facebook from './icons/facebook.svg';
 import twitter from './icons/twitter.svg';
 import instagram from './icons/instagram.svg';
 import linkedIn from './icons/linkedIn.svg';
+import map from './img/map.png';
 
 const Header = () => {
   return (
@@ -94,6 +95,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+        <img className={styles.header__map} src={map} alt="map" />
       </div>
     </div>
   );
