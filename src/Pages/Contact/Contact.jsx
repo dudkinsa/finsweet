@@ -1,9 +1,12 @@
 import React from 'react';
 import './contact.scss';
+import Header from './components/Header/Header';
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+    <Header />
+    </>
   )
 }
 
