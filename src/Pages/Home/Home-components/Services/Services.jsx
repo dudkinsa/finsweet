@@ -5,7 +5,7 @@ import headphone from './icons/headphones.svg';
 import setting from './icons/setting.svg';
 import webDev from './icons/web-dev.svg';
 import iconPrev from './icons/icon-prev.svg';
-import Button from '../../../Button/Button';
+import Button from '../../../../components/Button/Button';
 
 
 

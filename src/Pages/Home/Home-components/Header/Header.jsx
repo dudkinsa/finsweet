@@ -14,7 +14,7 @@ import logo4 from './assets/img/Logo-4.svg';
 import logo5 from './assets/img/Logo-5.svg';
 
 import Slider from '../SliderLogos/Slider';
-import Button from '../../../Button/Button';
+import Button from '../../../../components/Button/Button';'../../../../components/Button/Button';
 
 
 function id() {

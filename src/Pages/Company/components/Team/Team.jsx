@@ -82,7 +82,6 @@ const members = [
     name: 'Nicola Johnson',
     photo: team8,
     profession: 'React devloper',
-    profession: 'React devloper',
     linkTwitter: <img src={twitter} alt="twitter" />,
     linkInstagram: <img src={instagram} alt="instagram" />,
     linkLinkedIn: <img src={linkedIn} alt="linkedIn" />,

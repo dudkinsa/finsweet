@@ -3,7 +3,7 @@ import './service.scss';
 import uuid from 'react-uuid';
 
 import Header from './components/Header/Header';
-import Process from '../../components/Home/Home-components/Process/Process';
+import Process from '../../Pages/Home/Home-components/Process/Process';
 import Support from './components/Support/Support';
 import Developoment from './components/Developoment/Developoment';
 import Azure from './components/Azure/Azure ';

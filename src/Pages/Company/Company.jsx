@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import CTA from './../../components/CTA/CTA';
 import Story from './components/Story/Story';
 import LogoBar from './components/LogoBar/LogoBar';
-import Expertise from '../../components/Home/Home-components/Expertise/Expertise';
+import Expertise from '../../Pages/Home/Home-components/Expertise/Expertise';
 import Vision from './components/Vision/Vision';
 import Team from './components/Team/Team';
 
